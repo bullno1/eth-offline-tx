@@ -1,0 +1,11 @@
+form {
+	width: 70%;
+	margin: auto;
+}
+
+input {
+	display: block;
+	margin: 4px;
+	padding: 0;
+	width: 100%;
+}

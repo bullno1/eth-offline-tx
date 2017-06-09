@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Prepare a transaction</title>
+	<link rel="stylesheet" href="prepare-tx.css" />
+</head>
+
+<body>
+	<form id="form">
+		<label>Transaction details</label>
+		<input type="text" id="from_address" placeholder="From address" />
+		<input type="text" id="to_address" placeholder="To address" />
+		<input type="text" id="amount" placeholder="Amount in ETH" />
+		<input type="text" id="data" placeholder="Data" />
+
+		<label>Network parameters</label>
+		<input type="text" id="net_id" placeholder="Network ID" value="1" />
+		<input type="text" id="nonce" placeholder="Nonce" />
+		<input type="text" id="gas" placeholder="Gas Limit" />
+		<input type="text" id="gas_price" placeholder="Gas Price" />
+		<input type="button" id="btn_recommend" value="Recommend" />
+
+		<br />
+		<input type="button" id="btn_prepare" value="Prepare" />
+		<input type="text" id="unsigned_tx" placeholder="" readonly />
+		<br />
+		<input type="text" id="signed_tx" placeholder="Signed transaction" />
+		<input type="button" id="btn_send" value="Send" />
+	</form>
+
+	<script src="web3.min.js"></script>
+	<script src="prepare-tx.js"></script>
+
+</body>
+</html>
