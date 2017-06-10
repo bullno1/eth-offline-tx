@@ -2,4 +2,4 @@
 
 GETH=$(command -v geth || echo ./geth)
 SCRIPT="sign_tx($(echo $1 | base64 -d))"
-geth --maxpeers 0 --preload sign-tx.js --exec ${SCRIPT} console 2> /dev/null
+${GETH} --maxpeers 0 --preload sign-tx.js --exec ${SCRIPT} console 2> /dev/null
